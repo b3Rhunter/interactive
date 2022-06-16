@@ -27,6 +27,20 @@
 const playIconContainer = document.getElementById('play-icon');
 // variable that will store the button’s current state (play or pause)
 let state = 'play';
+    
+    playIconContainer.addEventListener('click', () => {
+  if(playState === 'play') {
+    audio.play();
+    playAnimation.playSegments([14, 27], true);
+    requestAnimationFrame(whilePlaying);
+    playState = 'pause';
+  } else {
+    audio.pause();
+    playAnimation.playSegments([0, 14], true);
+    cancelAnimationFrame(rAF);
+    playState = 'play';
+  }
+});
 
 // loads the animation that transitions the play icon into the pause icon into the referenced button, using Lottie’s loadAnimation() method
 const animation = lottieWeb.loadAnimation({
