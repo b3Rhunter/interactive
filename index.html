@@ -28,12 +28,12 @@ var option_PDFF = {
  enableSound: false,
  downloadEnable: false, 
  direction: pdfflip.DIRECTION.LTR,
- autoPlay: false,
- autoPlayStart: false,
+ autoPlay: true,
+ autoPlayStart: 1,
  autoPlayDuration: 3000,
  autoEnableOutline: false,
  autoEnableThumbnail: false,
- toggleFullscreen: fullscreen,
+ toggleFullscreen: Fullscreen,
 
 /* TRANSLATE INTERFACE */  
  text: {
@@ -69,7 +69,7 @@ backgroundImage: "background.jpeg",
  controlsPosition: pdfflip.CONTROLSPOSITION.BOTTOM,
  allControls: "outline,pageMode,thumbnail,play,startPage,altPrev,pageNumber,altNext,endPage,zoomIn,zoomOut,fullScreen,download,sound,share",
  hideControls: "sound,outline,thumbnail,play,startPage,endPage,zoomIn,zoomOut,pageMode,download,share",
- toggleFullscreen: fullscreen,
+ toggleFullscreen: Fullscreen,
 };
 
 var pdfflipLocation = "";
