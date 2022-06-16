@@ -10,20 +10,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="css/pdfflip.css" rel="stylesheet" type="text/css">
   
-  <style>
-  
-  audio {
-    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-    width: 200px;
-    height: 25px;
-}
-  
-  </style>
-  
 </head>
 <body>
 
-<audio:: src="iss216.mp3" type="audio/mpeg" style="height: 20px, width: 20px, position: absolute, top: 5, left: 5";>
+<audio:: src="iss216.mp3" type="audio/mpeg";>
 </audio> 
   
 <div class="PDFFlip" id="PDFF" source="pdf/iss216.pdf"></div>
@@ -43,7 +33,7 @@ var option_PDFF = {
  autoPlayDuration: 3000,
  autoEnableOutline: false,
  autoEnableThumbnail: false,
- toggleFullscreen: true,
+ toggleFullscreen: fullscreen,
 
 /* TRANSLATE INTERFACE */  
  text: {
@@ -79,7 +69,7 @@ backgroundImage: "background.jpeg",
  controlsPosition: pdfflip.CONTROLSPOSITION.BOTTOM,
  allControls: "outline,pageMode,thumbnail,play,startPage,altPrev,pageNumber,altNext,endPage,zoomIn,zoomOut,fullScreen,download,sound,share",
  hideControls: "sound,outline,thumbnail,play,startPage,endPage,zoomIn,zoomOut,pageMode,download,share",
- toggleFullscreen: true,
+ toggleFullscreen: fullscreen,
 };
 
 var pdfflipLocation = "";
