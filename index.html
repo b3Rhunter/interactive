@@ -13,11 +13,10 @@
 </head>
 <body>
 
-  <div>
-  
-    <audio src="iss216.mp3" controls"play"/>
-    
-  </div>
+ <audio id="player" src="iss216.mp3"></audio>
+<div>
+    <button onclick="document.getElementById('player').play()">Play</button>
+</div>
   
 <div class="PDFFlip" id="PDFF" source="pdf/iss216.pdf"></div>
 
